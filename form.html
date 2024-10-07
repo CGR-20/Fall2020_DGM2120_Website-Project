@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo 2">
+        <title>Sign up: Tech Savvy Emporium</title>
+    </head>
+    <body>
+        <div class="page">
+            <!-- top navigation -->
+            <header>
+                <h1>Tech Savvy Emporium</h1>
+                <h2>The place to go to get your technological fix</h2>
+            </header>
+
+            <!-- search bar (will make functional in future) -->
+            <div class="search">
+                <input class="searchBar" type="text" placeholder="Search...">
+                <button class="searchButton" type="submit">
+                    <img src="images/search13.png" alt="Search">
+                </button>
+            </div>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a class="active" href="form.html">Sign up</a>
+                <a href="media.html">Additional Info</a>
+                <a href="map.html">Location</a>
+            </nav>
+
+            <main>
+                <form action="thanks.html" method="post">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <div class="formCon">
+                            <label id="fname">First Name:</label>
+                                <br>
+                                <input type="text" name="fname" required>
+                            <br>
+                            <label id="lname">Last Name:</label>
+                                <br>
+                                <input type="text" name="lname" required>
+                            <br>
+                            <label id="mail">Email:</label>
+                                <br>
+                                <input type="email" name="mail" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,}$" required>
+                            <br>
+                            <label id="phone">Phone Number:</label>
+                                <br>
+                                <input type="tel" name="phone">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Preferences</legend>
+                        <div class="formCon">
+                            <label id="rad">Would you like to sign up for monthly updates and offers?</label>
+                            <br>
+                            <input type="radio" name="rad" value="yes">
+                                <label id="rad1">Yes</label>
+                            <br>
+                            <input type="radio" name="rad" value="no">
+                                <label id="rad2">No</label>
+                        </div>
+
+                        <div class="formCon">
+                            <label id="check">What are you interested in?</label>
+                            <br>
+                            <input type="checkbox" name="check1" value="pat">
+                                <label id="check1">Phones and Tablets</label>
+                            <br>
+                            <input type="checkbox" name="check2" value="cal">
+                                <label id="check2">Computers and Laptops</label>
+                            <br>
+                            <input type="checkbox" name="check3" value="vg">
+                                <label id="check3">Video Games and Consoles</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Optional</legend>
+                        <div class="formCon">
+                            <label id="gender">What gender are you?</label>
+                            <br>
+                            <select name="gender">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Prefer not to answer</option>
+                            </select>
+                        </div>
+
+                        <div class="formCon">
+                            <label id="tarea">Is there anything we can do to make the site more tech savvy?</label>
+                                <br>
+                                <textarea name="tarea" rows="10" cols="100"></textarea>
+                        </div>
+                    </fieldset>
+                    <input type="submit" value="Sign me up!">
+                </form>
+            </main>
+            <footer>
+                <!-- copyright entity, bullet entity, date and name -->
+                <p>&copy; 2020 &bull; Ramirez Electronic Industries Co. &bull; Built by Carlos Ramirez as DGM 2120 class project</p>
+            </footer>
+        </div>
+    </body>
+</html>

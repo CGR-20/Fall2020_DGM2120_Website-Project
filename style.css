@@ -1,0 +1,634 @@
+/* 
+CSS File - Table of Contents
+* CSS reset
+* Natural box layout
+* Important elements (ordered by page layout)
+* Individual and grouped elements (ordered by most complicated to least)
+* Media queries (ordered by largest screen size to smallest)
+*/
+
+/* CSS reset */
+h1, h2, p, main, body, figure.galleryItem, fieldset, legend, label, input, select, option, textarea, blockquote, dt, dd, div, iframe
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* natural box layout */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Main and other important elements */
+body
+{
+    background-color: #445BC1;
+    background-image: url(images/gradient_image2.gif);
+    background-repeat: repeat-x;
+    /* margin: 0 1% 0 1%; */
+}
+
+div.page
+{
+    max-width: 90%;
+    margin: 0 auto;
+    box-shadow: 5px 5px 20px #404040;
+}
+
+header
+{
+    background-color: white;
+    padding: 1%;
+    background-image: url("images/circuit_board337h.png"), url("images/logo368h.png"); 
+    background-repeat: no-repeat;
+    background-size: cover, contain;
+    background-position: 0px, 10px;
+}
+
+    header h1
+    {
+        font-size: 6vw;
+        text-shadow: 4px 4px #97BAEC;
+    }
+
+    header h2
+    {
+        text-shadow: 2px 2px 0px #97BAEC;
+        font-size: 3vw;
+    }
+
+    header h1, header h2
+    {
+        margin-left: 20%;
+    }
+
+div.search
+{
+    padding: 1%;
+}
+
+    .searchBar, .searchButton
+    {
+        padding:inherit;
+        border-radius: 10px; 
+        background: linear-gradient(to bottom right, white, #e8e8e8);
+    }
+
+        .searchBar
+        {
+            width: 93%;
+        }
+
+        .searchButton
+        {
+            border: none;
+            width: 5%;   
+        }
+
+        .searchButton:hover
+        {
+            background-color: #97BAEC;
+            color: #1727AE;
+        }
+
+nav
+{
+    background-color: white;
+    overflow: hidden;
+    padding: 1%;
+    margin-bottom:1%;
+}
+
+    nav a
+    {
+        display: block;
+        float: left;
+        text-align: center;
+        text-decoration: none;
+        padding:inherit;
+        border-bottom: solid;
+        margin: 0 0.5%;
+        color: #2C43B8;
+    }
+
+    nav a:hover
+    {
+        background-color: #97BAEC;
+        color: white;
+        border-radius: 10px;
+    }
+
+    nav a.active
+    {
+        background-color: #2C43B8;
+        color: white;
+        border-radius: 10px;
+    }
+
+main
+{
+    background-color: white;
+    padding-bottom: 1%;
+}
+
+    main h2
+    {
+        text-decoration-line: underline;
+        margin-top: 10px;
+    }
+
+    main h2:first-of-type
+    {
+        padding-top: 1%;
+    }
+
+    main h2, p
+    {
+        padding: 0 0 1% 1%;
+    }
+
+footer
+{
+    color: white;
+    padding-top: 1%;
+}
+
+figure.homeImage
+{
+    background-color: #2C43B8;
+    padding: 2%;
+    margin: 2%;
+    float: right;
+    width: 40%;
+}
+
+    div.imgCont
+    {
+        padding: 3.5%;
+        background-color: white;
+    }
+
+        figure.homeImage img
+        {
+            width: 100%;
+            box-shadow: 5px 5px 10px #808080;
+        }
+
+    figure.homeImage figcaption
+    {
+        text-align: center;
+        margin-top: 4%;
+        color: white;
+    }
+
+div.contact
+{
+    border-top-style: dotted;
+    border-width: thin;
+    border-color: #1727AE;
+}
+
+    div.contact p
+    {
+        padding: 0;
+        padding: 0.5% 0 0 1%
+    }
+
+div.gallery
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 3%;
+    width: 90%;
+    background-color: #2C43B8;
+    border-radius: 10px;
+}
+
+    div.gallery figure.galleryItem
+    { 
+        background-color: white;
+        padding: 1%;
+        margin: 20px;
+    }
+
+        figure.galleryItem figcaption
+        {
+            text-align: center;
+            color: #2C43B8;
+        }
+
+form
+{
+    padding-top: 1%;
+}
+
+    fieldset
+    {
+        background-color: #2C43B8;
+        color: white;
+        border: 2px solid;
+        border-radius: 10px;
+        margin: auto;
+        padding: 1%;
+        width: 90%;
+        margin-top: 1%;
+    }
+
+        legend
+        {
+            border: 2px solid;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #2C43B8;
+        }
+
+        div.formCon
+        {
+            padding: 1%;
+        }
+
+            div.formCon > input
+            {
+                border-radius: 5%;
+                margin-bottom: 1%;
+                margin-top: 0.5%
+            }
+
+            select
+            {
+                margin-top: 0.5%;
+            }
+
+            textarea
+            {
+                margin-top: 0.5%;
+                width: 100%;
+            }
+
+    form > input
+    {
+        border: none;
+        padding: 1%;
+        margin: 1% 0 0 1%;
+        background-color: #2C43B8;
+        color: white;
+        font-weight: bold;
+        font-size: 100%;
+        border-radius: 10px;
+    }
+
+        form > input:hover
+        {
+            background-color: #97BAEC;
+            color: white;
+        }
+
+img.thanks
+{
+    border: 2px solid #1727AE;
+    padding: 1%;
+    margin: 1.5% 1.5% 0 1.5%;
+    float: right;
+    width: 50%;
+}
+
+div.tableCon
+{
+    margin: 0 1%;
+}
+
+    table
+    {
+        width: 100%;
+    }
+        th
+        {
+            background-color: #445BC1;
+            color: white;
+        }
+
+        tr:nth-child(odd)
+        {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even)
+        {
+            background-color: white;
+        }
+
+        tr:hover
+        {
+            background-color: #BBDFFA;
+        }
+
+        th, td
+        {
+            padding: 1%;
+        }
+
+        table, th, td
+        {
+            border: 2px solid #ddd;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+div.videoCon
+{
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 ratio */
+    position: relative;
+    margin: 0 1%;
+}
+
+    iframe.video
+    {
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+    }
+
+div.audioCon
+{
+    margin: 1% 1% 0;
+}
+    audio
+    {
+        width: 50%;
+    }
+
+div.mapCon
+{
+    margin: 0 1%;
+}
+
+    iframe.map
+    {
+        width: 100%;
+        height: 500px;
+    }
+
+div.endFloat
+{
+    clear: both;
+}
+
+/* Individual and grouped elements */
+nav, main
+{
+    background-image: url(images/circuit_board337h.png);
+    background-size: cover;
+}
+
+figure.homeImage, blockquote, dt, div.gallery, fieldset, legend, form >input
+{
+    background-color: #445BC1;
+}
+
+h1, h2, a, p, dt, dd, blockquote, li, figcaption, label, legend, option, input, button
+{
+    font-family: 'Exo 2';
+}
+
+h1, h2, p, dd, ol, ul
+{
+    margin-right: 1%;
+}
+
+ol li, ul li
+{
+    background-repeat: no-repeat;
+    background-position: left center;
+    list-style-type: none;
+    padding-left: 30px;
+}
+
+blockquote, dd, dt
+{
+    padding: 1%;
+}
+
+ol li
+{
+    background-image: url(images/arrow10.png);
+}
+
+ul li
+{
+    background-image: url(images/double_arrow10.png);
+}
+
+h1
+{
+    color: #2C43B8;
+}
+
+h2
+{
+    color: #445BC1;
+}
+
+a:hover
+{
+    color: #BBDFFA;
+    font-weight: bold;
+}
+
+b
+{
+    color: #445BC1;
+}
+
+ol
+{
+    margin-bottom: 2%;
+}
+
+ul
+{
+    margin-bottom: 1%;
+}
+
+dt 
+{
+    background-color: #445BC1;
+    color: white;
+}
+
+dd
+{
+    margin: auto;
+}
+
+    dd:nth-child(6)
+    {
+        padding-bottom: 0;
+    }
+
+blockquote
+{
+    background-color: #445BC1;
+    color: white;
+    margin: auto;
+    margin-bottom: 2%;
+    width: 90%;
+}
+
+/* Media queries for different screen sizes */
+
+/* large tablet */
+@media only screen and (max-width: 991px)
+{
+    header h1, header h2
+    {
+        margin-left: 21%;
+    }
+    
+    .searchBar, .searchButton, nav a, form >input
+    {
+        padding: 1.5%;
+    }
+    
+    fieldset input, fieldset select
+    {
+        padding: 0.5%;
+    }
+}
+
+/* medium tablet */
+@media only screen and (max-width: 767px)
+{
+    header h1, header h2
+    {
+        margin-left: 22%;
+    }
+    
+    .search
+    {
+        padding: 2%;
+    }
+    
+        .searchBar
+        {
+            width: 83%;
+        }
+
+        .searchButton
+        {
+            width: 15%;
+        }
+
+        .searchBar, .searchButton
+        {
+            padding: 2%;
+        }
+    
+    nav a
+    {
+        width: 49%;
+        text-align: center;
+        text-decoration: none;
+        color: #2C43B8;
+        background-color: white;
+        border: 2px solid #2C43B8;
+        margin: 0.5%;
+    }
+    
+        nav a:hover
+        {
+            border: 2px solid #97BAEC;
+        }
+
+    main h2
+    {
+        font-size: 15pt;
+        margin-top: 15px;
+    }
+    
+    main h2, p, dt, dd
+    {
+        padding: 0 0 1.5% 1.5%;
+    }
+    
+    .searchBar, .searchButton, nav a, nav a.active, nav a:hover, form >input, fieldset, legend, div.gallery
+    {
+        border-radius: 5px;
+    }
+    
+    ol
+    {
+        margin-bottom: 15px;
+    }
+    
+    ul
+    {
+        margin-bottom: 10px;
+    }
+    
+    audio
+    {
+        width: 75%; 
+    }
+}
+
+/* phone */
+@media only screen and (max-width: 479px)
+{
+    header h1, header h2
+    {
+        margin-left: 41%;
+    }
+    
+    div.search
+    {
+        padding: 3%;
+    }
+    
+        .searchBar
+        {
+            width: 83%;
+        }
+
+        .searchButton
+        {
+            width: 15%;
+        }
+    
+    nav a
+    {
+        display: block;
+        float: none;
+        text-align: center;
+        text-decoration: none;
+        padding:inherit;
+        margin: 2% 0;
+        color: #2C43B8;
+        background-color: white;
+        border: 2px solid #2C43B8;
+        width: 100%;
+    }
+    
+        nav a:hover
+        {
+            border: 2px solid #97BAEC;
+        }
+    
+    main h2
+    {
+        font-size: 15pt;
+        margin-top: 15px;
+    }
+    
+    ol
+    {
+        margin-bottom: 15px;
+    }
+    
+    audio
+    {
+        width: 100%;
+    }
+}

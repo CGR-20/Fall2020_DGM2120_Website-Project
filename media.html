@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Exo 2' rel='stylesheet'>
+        <title>Additional Info: Tech Savvy Emporium</title>
+    </head>
+    <body>
+        <div class="page">
+            <header>
+                <h1>Tech Savvy Emporium</h1>
+                <h2>The place to go to get your technological fix</h2>
+            </header>
+            
+            <!-- search bar (will make functional in future) -->
+            <div class="search">
+                <input class="searchBar" type="text" placeholder="Search...">
+                <button class="searchButton" type="submit">
+                    <img src="images/search13.png" alt="Search">
+                </button>
+            </div>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="form.html">Sign up</a>
+                <a class="active" href="media.html">Additional Info</a>
+                <a href="map.html">Location</a>
+            </nav>
+            
+            <main>
+                <h2>Store Hours:</h2>
+                <div class="tableCon">
+                    <table>
+                        <tr>
+                            <th>Days</th>
+                            <th>Hours</th>
+                        </tr>
+                        <tr>
+                            <td>Monday - Friday</td>
+                            <td>10am - 10pm</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>8am - 10pm</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>8am - 5pm</td>
+                        </tr>
+                        <tr>
+                            <td>Holidays</td>
+                            <td>10am - 3pm</td>
+                        </tr>
+                        <tr>
+                            <td>Christmas</td>
+                            <td>Closed</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <h2>What our store has to offer</h2>
+                <div class="videoCon">
+                    <iframe class="video" src="https://www.youtube.com/embed/3TqLNkLdpGY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+                <div class="audioCon">
+                    <p>Hear about our store from our newest customer: John Doe</p>
+                    <audio controls>
+                        <source src="audio/quote.ogg" type="audio/ogg">
+                        <source src="audio/quote.mp3" type="audio/mpeg">
+                        Your browser does not support audio.
+                    </audio>
+                </div>
+            </main>
+            
+            <footer>
+                <!-- copyright entity, bullet entity, date and name -->
+                <p>&copy; 2020 &bull; Ramirez Electronic Industries Co. &bull; Built by Carlos Ramirez as DGM 2120 class project</p>
+            </footer>
+        </div>
+    </body>
+</html>
