@@ -20,4 +20,4 @@ Project from UVU Fall 2020 DGM 2120 that demonstrates a website created using HT
 
 ---
 
-The website can be found at: 
+The website can be found at: https://cgr-20.github.io/Fall2020_DGM2120_Website-Project/
